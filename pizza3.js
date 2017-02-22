@@ -70,5 +70,5 @@ function CL() {
 }
 var start =3;
 function order2() {
- document.getElementById("tot").innerHTML = "tot";
+ document.getElementById("tot").innerHTML = "Thank you";
 }
