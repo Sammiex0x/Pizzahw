@@ -68,3 +68,7 @@ function CL() {
     console.log("CL");
      document.getElementById("tot").innerHTML = "0";
 }
+var start =3;
+function order2() {
+ document.getElementById("tot").innerHTML = "tot";
+}

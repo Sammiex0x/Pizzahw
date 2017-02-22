@@ -10,9 +10,15 @@
 img {
     width: 150px
 }
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+body {
+    color: purple
+}
 pizza {
     width: 300px
 }
 body {
-    background: lightcoral
+    background: lightblue
 }
