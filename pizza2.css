@@ -1,19 +1,18 @@
 .test3 {
-    color: darkorchid
+    color: darkolivegreen
 }
 .test4 {
-color: midnightblue
+    color: midnightblue
 }
 .test5 {
-       font-style: italic
+    font-style: italic
 }
 img {
-    width: 150px;
+    width: 150px
 }
 pizza {
-     width: 200px;
+    width: 300px
 }
 body {
-    background-color: lightblue;
-    color: purple
+    background: lightcoral
 }
