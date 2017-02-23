@@ -1,5 +1,5 @@
 .test3 {
-    color: darkolivegreen
+    color: darkred
 }
 .test4 {
     color: midnightblue
@@ -14,11 +14,9 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 body {
-    color: purple
+    color: darkviolet
 }
-pizza {
-    width: 300px
-}
+
 body {
-    background: lightblue
+    background: lightgrey
 }

@@ -69,6 +69,31 @@ function CL() {
      document.getElementById("tot").innerHTML = "0";
 }
 var start =3;
-function order2() {
- document.getElementById("tot").innerHTML = "Thank you";
+function order12() {
+ document.getElementById("tot").innerHTML = "0";
 }
+
+var start =3;
+function add1() {
+
+    var currTotal = document.getElementById("tot").innerHTML;
+    if (isNaN(currTotal)) {
+        currTotal = start;
+    }
+
+    var myInput = document.getElementById("ck").value;
+
+    var newTotal = +myInput + +currTotal;
+
+    document.getElementById("tot").innerHTML = newTotal;
+}
+     function Order() {
+            
+            var myString = document.getElementById("order").value;
+                var Order = myString.split(",");
+            console.log(Order);
+            for (var i=0; i<Order.length; i++) {
+                    Order[i] = Order[i].trim();
+                    console.log(Order[i]);
+            }
+     }
