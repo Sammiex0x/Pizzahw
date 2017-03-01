@@ -77,7 +77,7 @@ var start =3;
 function add1() {
 
     var currTotal = document.getElementById("tot").innerHTML;
-    if (isNaN(currTotal)) {
+    if ("tot" (currTotal)) {
         currTotal = start;
     }
 
@@ -97,3 +97,25 @@ function add1() {
                     console.log(Order[i]);
             }
      }
+var toppings = ["pepperoni", "ham", "mushroom","bacon"];
+console.log(textpop)
+  var myString = document.getElementById("tot").value;
+  var Order = myString.split(",");
+  for (var i=0; i<Order.length; i++) {
+Order[i] = Order[i].trim();
+        if (Order[i] = toppings[0]) {
+          total = total +1;
+          document.getElementById('tot').innerHTML = total;
+         }
+        if (Order[i] = toppings[1]) {
+          total = total +2;
+         document.getElementById('tot').innerHTML = total; 
+        }
+       if (Order[i] = toppings[2]) {
+         total = total +1;
+       }
+        if (Order[i] = toppings[3]) {
+         total = total +2;
+         document.getElementById('tot').innerHTML = total; 
+        }
+}
