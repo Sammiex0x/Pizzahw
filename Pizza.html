@@ -1,63 +1,69 @@
 <html>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <head>
-    <h1 style="text-align:center;">Sam's Fresh Pizza</h1>        
-<link rel="stylesheet" href="pizza2.css"> </link>
-        <script src="pizza3.js"></script>
-        </head>
-    <body>
-     <h1> 
-<center> <p class="test5"> "Local Fresh Pizza" </p> 
-</1h>
- <img src="pizza.jpg" id="pizza"></img>
-<h1>
-<p class="test4"> Customize your pizza: 
-<h2 class="test5"> *Cheese and tomato sauce included </h1></p>
-     <img src="MFC_Mushrooms_Sliced.jpg" id="img"></img>
-     <h2>
-    Mushrooms $2
-      <button id="mush" onclick="mush ()" >
+
+<head>
+    <h1 style="text-align:center;">Sam's Fresh Pizza</h1>
+    <link rel="stylesheet" href="pizza2.css"> </link>
+    <script src="pizza3.js"></script>
+</head>
+
+<body>
+    <h1>
+        <center>
+            <p class="test5"> "Local Fresh Pizza" </p>
+            </1h>
+            <img src="pizza.jpg" id="pizza"></img>
+            <h1>
+                <p class="test4"> Customize your pizza:
+                    <h2 class="test5"> *Cheese and tomato sauce included </h1>
+            </p>
+            <img src="MFC_Mushrooms_Sliced.jpg" id="img"></img>
+            <h2>
+                Mushrooms $2
+                <button id="mush" onclick="mush ()">
 Add
 </button>
-</h2>
-     <img src="bacon-300x186.jpg" id="img"></img>
-<h2>
-Bacon $3
- <button id="bac" onclick="bac ()" >
+            </h2>
+            <img src="bacon-300x186.jpg" id="img"></img>
+            <h2>
+                Bacon $3
+                <button id="bac" onclick="bac()">
 Add
 </button>
-</h2>
-    <img src="pepperoni.png" id="img"></img>
-<h2>
-Pepperoni $1
- <button id="pep" onclick="pep ()">
+            </h2>
+            <img src="pepperoni.png" id="img"></img>
+            <h2>
+                Pepperoni $1
+                <button id="pep" onclick="pep()">
 Add
 </button>
-</h2>
-  <img src="2000w_2.jpg" id="img"></img>  
-  <h2>
-Ham $2 <button id="ham" onclick="ham ()">
+            </h2>
+            <img src="2000w_2.jpg" id="img"></img>
+            <h2>
+                Ham $2 <button id="ham" onclick="ham()">
 Add
 </button>
-</h2>
-<h2>
-  Your Order Total  = <span id="tot" >$0</span>
-<h2>
-         <h1> Type in your Order: </h1>
-               <ul>
-            <li>Mushrooms</li>
-            <li>Bacon</li>
-            <li>Pepperoni</li>
-            <li>Ham</li>
-        </ul>
-        Type your order  in the text box below with commas between each one: <br/>  
-        <input id="ck"/>
-         <button id="clearrr" onclick="CL()"> 
+            </h2>
+            <h2>
+                Your Order Total = <span id="tot">$0</span>
+                <h2>
+                    <h1> Type in your Order: </h1>
+                    <ul>
+                        <li>Mushrooms</li>
+                        <li>Bacon</li>
+                        <li>Pepperoni</li>
+                        <li>Ham</li>
+                    </ul>
+                    Type your order in the text box below with commas between each one: <br/>
+                    <input id="ck" />
+                    <button id="clearrr" onclick="CL()"> 
 Clear </button>
-<div><button onclick="add1()">ADD TO ORDER </button></div>
-</h2>
-</center>
-	</body>
+                    <div><button onclick="OrderTopping()">ADD TO ORDER </button></div>
+                </h2>
+        </center>
+</body>
+
 </html>
