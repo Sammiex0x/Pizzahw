@@ -1,119 +1,113 @@
-var start = 0;
+var count1 = 0;
 
-function mush() {
+function myfunction()
+{
 
-    console.log("I'm a mushroom lover");
+count1++;
 
-    var currTotal = document.getElementById("tot").innerHTML;
-    if (isNaN(currTotal)) {
-        currTotal = start;
+document.getElementById('pep').innerHTML = "Amount: $" + count1;
+
+}
+function myfunction2()
+{
+
+count1--;
+
+document.getElementById('pep').innerHTML = "Amount: $" + count1;
+
+}
+
+var count2 = 0;
+
+function myfunction3()
+{
+
+count2++;
+
+document.getElementById('shrooms').innerHTML = "Amount: $" + count2;
+
+}
+function myfunction4()
+{
+
+count2--;
+
+document.getElementById('shrooms').innerHTML = "Amount: $" + count2;
+
+}
+
+var count3 = 0;
+
+function myfunction5()
+{
+
+count3++;
+
+document.getElementById('ham').innerHTML = "Amount: $" + count3;
+}
+function myfunction6()
+{
+
+count3--;
+
+document.getElementById('ham').innerHTML = "Amount: $" + count3;
+
+}
+function total()
+{
+
+document.getElementById('total').innerHTML = "Total: $";
+document.getElementById('total').innerHTML += count1 + count2 + count3;
+}
+
+function reset()
+{
+	location.reload()
+	count1-count1;
+	count2-count2;
+	count3-count3;
+	document.getElementById('total').innerHTML = "Total: $";
+	document.getElementById('total').innerHTML += count1 - count1 + count2 - count2 + count3 - count3;
+	document.getElementById('pep').innerHTML = "Amount: $"
+	document.getElementById('pep').innerHTML +=- count1 + count1;
+	document.getElementById('shrooms').innerHTML = "Amount: $"
+	document.getElementById('shrooms').innerHTML +=- count2 + count2;
+	document.getElementById('ham').innerHTML = "Amount: $"
+	document.getElementById('ham').innerHTML +=- count3 + count3;
+}
+
+function Order() {
+  
+var myString = document.getElementById("order");
+ var Order = myString.split(",");
+var text = "";
+var i;
+	for (i = 0; i < myString.length ; i++) {
+	text += x.elements[i].value + "<br>";
+	}
+  
+   for (var i=0; i<Order.length; i++) {
+ 	Order[i] = Order[i].trim();
+
+ 	console.log(Order[i]);
     }
+ }
 
-
-    var newTotal = 2 + +currTotal;
-
-    document.getElementById("tot").innerHTML = newTotal;
-}
-
-function bac() {
-
-    console.log("I'm a Bacon lover");
-
-    var currTotal = document.getElementById("tot").innerHTML;
-    if (isNaN(currTotal)) {
-        currTotal = start;
+function input() {
+	var x = document.getElementById("inp");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
     }
-
-
-    var newTotal = 3 + +currTotal;
-
-    document.getElementById("tot").innerHTML = newTotal;
+    document.getElementById("demo").innerHTML = text;
+    document.getElementById("demo").innerHTML += "<hr>";
+    document.getElementById("demo").innerHTML += "Subtotal:" + "<br>";
+    document.getElementById("demo").innerHTML += "$";
+    document.getElementById("demo").innerHTML += count1 + count2 + count3 + "<br>" + "<br>";
+    document.getElementById("demo").innerHTML += "Total:" + "<br>";
+    document.getElementById("demo").innerHTML += "$";
+    document.getElementById("demo").innerHTML += count1 + count2 + count3 * "1.05";
+    document.getElementById("break").innerHTML = "";
 }
 
-
-function pep() {
-
-    console.log("I'm a pep lover");
-
-    var currTotal = document.getElementById("tot").innerHTML;
-    if (isNaN(currTotal)) {
-        currTotal = start;
-    }
-
-
-    var newTotal = 1 + +currTotal;
-
-    document.getElementById("tot").innerHTML = newTotal;
-}
-
-
-function ham() {
-
-    console.log("I'm a ham lover");
-
-    var currTotal = document.getElementById("tot").innerHTML;
-    if (isNaN(currTotal)) {
-        currTotal = start;
-    }
-
-    var newTotal = 2 + +currTotal;
-
-    document.getElementById("tot").innerHTML = newTotal;
-}
-
-function CL() {
-    console.log("CL");
-    document.getElementById("tot").innerHTML = "0";
-}
-
-function order12() {
-    document.getElementById("tot").innerHTML = "0";
-}
-
-
-function add1() {
-
-    var currTotal = document.getElementById("tot").innerHTML;
-    if (isNaN(currTotal)) {
-        currTotal = start;
-    }
-
-    var myInput = document.getElementById("ck").value;
-
-    var newTotal = +myInput + +currTotal;
-
-    document.getElementById("tot").innerHTML = newTotal;
-}
-
-function OrderTopping() {
-
-    var toppings = ["Pepperoni", "Ham", "Mushroom", "Bacon"];
-    var total = document.getElementById('tot').innerHTML;
-    if (isNaN(total)) {
-        total = start;
-    }
-    var myString = document.getElementById("ck").value;
-    var Order = myString.split(",");
-    console.log(Order);
-    for (var i = 0; i < Order.length; i++) {
-        Order[i] = Order[i].trim();
-        console.log(Order[i]);
-        if (Order[i] = toppings[0]) {
-            total = +total + 1;
-            document.getElementById('tot').innerHTML = total;
-        }
-        if (Order[i] = toppings[1]) {
-            console.log(Order[i] + "  " + toppings[1] + "  " + total);
-            total = +total + 2;
-            document.getElementById('tot').innerHTML = total;
-        }
-        if (Order[i] = toppings[2]) {
-            total = +total + 1;
-        }
-        if (Order[i] = toppings[3]) {
-            total = +total + 2;
-            document.getElementById('tot').innerHTML = total;
-        }
-    }
-
-}
